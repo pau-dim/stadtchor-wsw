@@ -42,7 +42,14 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* custom */
+  --color-custom-red-light: #f1a5a3;
+  --color-custom-red-dark: #aa0817;
+
 }
+
+
 
 :root {
   --radius: 0.625rem;
@@ -113,6 +120,8 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -120,7 +129,7 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-h1 {
+   h1 {
+    @apply text-custom-red-dark text-6xl my-6; 
+  } 
 }

@@ -20,7 +20,6 @@ export default function Home() {
 
         <CustomYoutubePlayer videoId="eGB99WHRguw" />
 
-
       </div>
     </>
   );
