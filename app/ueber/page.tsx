@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/cards/card";
+import Card from "../../components/cards/card";
 
 const UeberUns = () => {
   return (
@@ -7,8 +7,14 @@ const UeberUns = () => {
     <>
       <h1>Über uns</h1>
       <div className="flex grid-cols-2 gap-2">
-        <Card src="/images/Chorleiter Rainer Wetzorke.jpeg" />
-        <Card src="/images/Chorleiter Rainer Wetzorke.jpeg" />
+        <Card src="/images/Chorleiter Rainer Wetzorke.jpeg" title="Vereinsgeschichte"
+          text="Hier könnt ihr etwas über die Entstehung des Chores und seine Geschichte gemeinsam mit der Stadt Weißwasser erfahren"
+          link="/ueber/vereinsgeschichte" />
+
+        <Card src="/images/Chorleiter Rainer Wetzorke.jpeg"
+          title="Förderungen und Sponsoren"
+          text="Der Chor hat viele Unterstützer. Sehr herzlich möchten wir uns bei den folgenden Institutionen und Unternehmen bedanken"
+          link="/ueber/sponsoren" />
       </div>
 
     </>

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* @reference "tailwindcss/theme.css"; */
 
 
 @custom-variant dark (&:is(.dark *));
@@ -46,7 +47,14 @@
   /* custom */
   --color-custom-red-light: #f1a5a3;
   --color-custom-red-dark: #aa0817;
-
+  --color-custom-red-dark: #aa0817;
+  --color-custom-red-medium: #ec2b3f;
+  --color-custom-red-light: #f1a5a3;
+  --color-custom-indigo: #cde3fa;
+  --color-custom-grey-light: #e1e8ed;
+  --color-custom-white: #2f5f7;
+  --color-custom-wsw-yellow: #f2c72a;
+  --color-custom-wsw-blue: #2992c2;
 }
 
 
@@ -121,15 +129,20 @@
 }
 
 
-
 @layer base {
+  .custom-heading {
+    @apply text-custom-red-dark
+  }
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
-   h1 {
-    @apply text-custom-red-dark text-6xl my-6; 
+  h1 {
+    @apply text-custom-red-dark text-6xl my-12 font-bold; 
   } 
+  h4 {
+    @apply text-custom-red-dark text-3xl my-6 mx-auto;
+  }
 }
