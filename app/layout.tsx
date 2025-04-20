@@ -1,3 +1,4 @@
+import Footer from "@/components/navigation/footer";
 import Navigation from "../components/navigation/navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div className="md:w-[750px] md:mx-auto">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

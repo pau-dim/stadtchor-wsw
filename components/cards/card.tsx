@@ -2,19 +2,23 @@ import Link from "next/link";
 
 interface CardProps {
     src: string;
+    title: string;
+    text: string;
+    link: string;
+
 }
 
-const Card = ({ src }: CardProps) => {
+const Card = ({ src, title, text, link }: CardProps) => {
     return (
-        <div className="group overflow-hidden rounded-lg shadow-md transition-shadow hover:shadow-xl bg-green-300">
-            <Link href="/ueber/vereinsgeschichte">
+        <div className="group overflow-hidden rounded-lg shadow-md transition-shadow hover:shadow-xl bg-custom-grey-light">
+            <Link href={link}>
                 <figure>
                     <img src={src} alt="Chorleiter Rainer Wetzorke" />
                 </figure>
                 <div className="article-body">
-                    <h2 className="text-xl font-semibold group-hover:text-[#28666e] transition-colors duration-300">Vereinsgeschichte</h2>
+                    <h2 className="text-xl font-semibold group-hover:text-[#28666e] transition-colors duration-300">{title}</h2>
                     <p>
-                        Etwas über die Geschichte des Stadtchors dafdsgjsd asdgfsdf asd f sdf af a df ad f dsa  adfs asd fa
+                        {text}
                     </p>
                     <div className="flex items-center text-blue-700 focus:outline-dotted focus:outline-1 focus:outline-[#28666e]">
                         Read more
