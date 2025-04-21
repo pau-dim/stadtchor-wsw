@@ -7,9 +7,7 @@ type YouTubePlayerProps = {
 
 const CustomYouTubePlayer = ({ videoId }: YouTubePlayerProps) => {
   // Set up event handlers with proper types
-  const onReady: YouTubeProps['onReady'] = (event) => {
-    const player = event.target;
-  };
+
 
   const onError: YouTubeProps['onError'] = (error) => {
     console.error('YouTube Player Error:', error);
@@ -18,7 +16,6 @@ const CustomYouTubePlayer = ({ videoId }: YouTubePlayerProps) => {
   return (
     <YouTube
       videoId={videoId}
-      onReady={onReady}
       onError={onError}
     />
   );
