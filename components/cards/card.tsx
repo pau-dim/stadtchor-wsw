@@ -15,7 +15,7 @@ const Card = ({ src, title, text, link }: CardProps) => {
                 <figure>
                     <img src={src} alt="Chorleiter Rainer Wetzorke" />
                 </figure>
-                <div className="article-body">
+                <div className="article-body px-3">
                     <h2 className="text-xl font-semibold group-hover:text-[#28666e] transition-colors duration-300">{title}</h2>
                     <p>
                         {text}

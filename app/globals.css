@@ -133,6 +133,9 @@
   .custom-heading {
     @apply text-custom-red-dark
   }
+  .custom-grid {
+    @apply flex grid grid-cols-1 md:grid-cols-2 gap-4 mx-2 md:gap-2
+  }
   * {
     @apply border-border outline-ring/50;
   }

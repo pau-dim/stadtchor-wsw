@@ -17,7 +17,7 @@ export default function Home() {
 
       <div>
         <h1 className="mx-auto">Stadtchor Weißwasser</h1>
-        <div className="flex grid-cols-2 gap-2">
+        <div className="custom-grid">
           <Card src="/images/Chorleiter Rainer Wetzorke.jpeg"
             title="Unsere Probenzeiten"
             text="Proben jeden Xxxxxx um xxxxxx im xxxxxxxxxxxx"
@@ -29,7 +29,10 @@ export default function Home() {
         </div>
 
         <h4>Einblick in ein Konzert</h4>
-        <CustomYoutubePlayer videoId="eGB99WHRguw" />
+        <div className="w-1/2">
+
+          <CustomYoutubePlayer videoId="eGB99WHRguw" />
+        </div>
 
       </div>
     </>

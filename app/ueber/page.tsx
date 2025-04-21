@@ -6,7 +6,7 @@ const UeberUns = () => {
 
     <>
       <h1>Über uns</h1>
-      <div className="flex grid-cols-1 md:grid-cols-2 gap-2">
+      <div className="custom-grid">
         <Card src="/images/Chorleiter Rainer Wetzorke.jpeg" title="Vereinsgeschichte"
           text="Hier könnt ihr etwas über die Entstehung des Chores und seine Geschichte gemeinsam mit der Stadt Weißwasser erfahren"
           link="/ueber/vereinsgeschichte" />

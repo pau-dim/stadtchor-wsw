@@ -17,6 +17,7 @@ const CustomYouTubePlayer = ({ videoId }: YouTubePlayerProps) => {
     <YouTube
       videoId={videoId}
       onError={onError}
+      className="rounded-lg shadow-lg transition duration-500 group-hover:scale-105"
     />
   );
 };
