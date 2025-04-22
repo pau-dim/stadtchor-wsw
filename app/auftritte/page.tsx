@@ -25,6 +25,10 @@ export default function Auftritte() {
 
   return (
     <>
+
+      <h1>
+        Unsere Auftritte 2025
+      </h1>
       <div className="container mx-auto">
 
         <Table>
