@@ -1,9 +1,9 @@
 import Image from "next/image";
 import CustomYoutubePlayer from "../components/youtubeplayer/CustomYoutubePlayer"
-import Card from "../components/cards/card";
 import Auftritte from "./auftritte/page";
 import UeberUns from "./ueber/page";
 import Kontakt from "./kontakt/page";
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -21,7 +21,6 @@ export default function Home() {
       <div className="text-center">
         <h1 className="mx-auto text-center">Stadtchor Weißwasser</h1>
 
-        <h4>Einblick in ein Konzert</h4>
         <div className="align-center mx-auto">
 
           <CustomYoutubePlayer videoId="eGB99WHRguw" />

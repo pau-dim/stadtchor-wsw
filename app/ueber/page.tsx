@@ -11,7 +11,7 @@ const UeberUns = () => {
           text="Hier könnt ihr etwas über die Entstehung des Chores und seine Geschichte gemeinsam mit der Stadt Weißwasser erfahren"
           link="/ueber/vereinsgeschichte" />
 
-        <Card src="/images/Chorleiter Rainer Wetzorke.jpeg"
+        <Card src="/images/young-people-stacking-hands.jpg"
           title="Förderungen und Sponsoren"
           text="Der Chor hat viele Unterstützer. Sehr herzlich möchten wir uns bei den folgenden Institutionen und Unternehmen bedanken"
           link="/ueber/sponsoren" />

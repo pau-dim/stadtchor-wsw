@@ -96,25 +96,34 @@ const Navbar = () => {
                 <li key={item.id}><NavItem href={item.uri} >{item.name}</NavItem></li>
               ))}
             </ul>
-
-            <div className="align-right md:hidden">
-              <div className={`${isOpen ? "hidden" : "flex"}`}>
+            <div className={`${isOpen ? "hidden" : "hidden md-flex"}`}>
+              <Button onClick={toggle}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </Button>
+            </div>
+          </div>
+          {isOpen && (
+            <div className="fixed inset-0 z-50 flex flex-col bg-black bg-opacity-60">
+              <div className="flex justify-end p-4">
                 <Button onClick={toggle}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 text-white">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </Button>
               </div>
-              <div className={`${isOpen ? "container " : "hidden"}`}>
-                <ul className="md:flex top-1/2 flex-col gap-x-6 text-black">
+              <div className="flex-1 flex flex-col items-center">
+                <ul className="flex flex-col gap-6 text-white text-4xl">
                   {navBarLinksMap.map((item) => (
-                    <li key={item.id}><Link href={item.uri} onClick={toggle}>{item.name}</Link></li>
+                    <li key={item.id}>
+                      <Link href={item.uri} onClick={toggle}>{item.name}</Link>
+                    </li>
                   ))}
                 </ul>
               </div>
-
             </div>
-          </div>
+          )}
         </div>
       </div >
     </>
