@@ -4,11 +4,10 @@ import Button from "../navbar/Button";
 const Footer = () => {
     return (
         <footer className="w-full bg-custom-indigo py-8 mt-10 text-xl">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start">
+            <div className="container md:mx-auto px-4 flex flex-col md:flex-row justify-between items-center items-start">
                 {/* Left: Social Media */}
                 <div className="mb-6 md:mb-0">
-                    <div className="mb-5">
-
+                    <div className="mb-6">
                         <Link href="/impressum" className="font-bold">Impressum</Link>
                     </div>
                     <h3 className="font-bold mb-2">Folge uns</h3>
