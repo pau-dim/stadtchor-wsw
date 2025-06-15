@@ -7,6 +7,10 @@ const Footer = () => {
             <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start">
                 {/* Left: Social Media */}
                 <div className="mb-6 md:mb-0">
+                    <div className="mb-5">
+
+                        <Link href="/impressum" className="font-bold">Impressum</Link>
+                    </div>
                     <h3 className="font-bold mb-2">Folge uns</h3>
                     <ul className="flex space-x-4 mb-6">
                         <li>
@@ -26,7 +30,6 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <Link href="/impressum" className="font-bold">Impressum</Link>
 
                 {/* Right: Contact Info */}
                 <div className="">
