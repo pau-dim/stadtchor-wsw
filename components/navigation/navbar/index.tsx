@@ -1,8 +1,9 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "./Button";
+import { usePathname } from 'next/navigation';
 
 const navBarLinksMap = [
   {
@@ -12,22 +13,71 @@ const navBarLinksMap = [
   },
   {
     id: 2,
-    uri: "/auftritte",
+    uri: "#auftritte",
     name: "Auftritte"
   },
   {
     id: 3,
-    uri: "/ueber",
+    uri: "#ueberuns",
     name: "Über uns"
   },
   {
     id: 4,
-    uri: "/kontakt",
+    uri: "#kontakt",
     name: "Kontakt"
   }
 ]
 
+
+interface NavItemProps {
+  href: string;
+  className?: string;
+  children: React.ReactNode;
+}
+
+const NavItem: React.FC<NavItemProps> = ({ href, children }) => {
+
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href;
+  console.log(isActive(href))
+  console.log("href: " + href)
+
+  const baseClasses = 'px-4 py-2 rounded-xl transition-colors duration-200';
+  const activeClasses = isActive(href)
+    ? 'bg-indio-50 text-black'
+    : 'text-black hover:bg-indigo-50 hover:text-black';
+
+  return (
+    <a href={href} className={`${baseClasses} ${activeClasses}`}>
+      {children}
+    </a>
+  );
+};
+
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 } // adjust for when a section becomes "active"
+    );
+
+    navBarLinksMap.forEach((element) => {
+      const el = document.getElementById(element.id.toString());
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -43,7 +93,7 @@ const Navbar = () => {
             <Logo />
             <ul className="hidden md:flex gap-x-6 text-black">
               {navBarLinksMap.map((item) => (
-                <li key={item.id}><Link href={item.uri}>{item.name}</Link></li>
+                <li key={item.id}><NavItem href={item.uri} >{item.name}</NavItem></li>
               ))}
             </ul>
 

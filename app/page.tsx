@@ -1,6 +1,9 @@
 import Image from "next/image";
 import CustomYoutubePlayer from "../components/youtubeplayer/CustomYoutubePlayer"
 import Card from "../components/cards/card";
+import Auftritte from "./auftritte/page";
+import UeberUns from "./ueber/page";
+import Kontakt from "./kontakt/page";
 
 export default function Home() {
   return (
@@ -15,23 +18,16 @@ export default function Home() {
         />
       </div>
 
-      <div>
-        <h1 className="mx-auto">Stadtchor Weißwasser</h1>
-        <div className="custom-grid">
-          <Card src="/images/Chorleiter Rainer Wetzorke.jpeg"
-            title="Unsere Probenzeiten"
-            text="Proben jeden Xxxxxx um xxxxxx im xxxxxxxxxxxx"
-            link="" />
-          <Card src="/images/Chorleiter Rainer Wetzorke.jpeg"
-            title="Nächster Auftritt"
-            text="teststete"
-            link="" />
-        </div>
+      <div className="text-center">
+        <h1 className="mx-auto text-center">Stadtchor Weißwasser</h1>
 
         <h4>Einblick in ein Konzert</h4>
-        <div className="w-1/2">
+        <div className="align-center mx-auto">
 
           <CustomYoutubePlayer videoId="eGB99WHRguw" />
+          <Auftritte />
+          <UeberUns />
+          <Kontakt />
         </div>
 
       </div>

@@ -11,22 +11,18 @@ import { parseCsvToRowsAndColumn } from "@/utils/parseCsv";
 import fs from 'fs'
 import path from "path";
 
+
 export default function Auftritte() {
 
-  const readLocalFile = (fileName: string): string => {
-    const filePath = path.join(process.cwd(), "/data", fileName);
-    return fs.readFileSync(filePath, 'utf8');
-  };
-
-  const csvData = readLocalFile("auftritte.csv")
-
+  const filePath = path.join(process.cwd(), "/data", "auftritte.csv");
+  const csvData = fs.readFileSync(filePath, 'utf8');
   const csvAsRows = parseCsvToRowsAndColumn(csvData)
   console.log(csvAsRows)
 
   return (
     <>
 
-      <h1>
+      <h1 id="auftritte" className="text-center">
         Unsere Auftritte 2025
       </h1>
       <div className="container mx-auto">
@@ -57,3 +53,4 @@ export default function Auftritte() {
     </>
   );
 }
+

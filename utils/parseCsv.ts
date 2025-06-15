@@ -1,4 +1,4 @@
-export function parseCsvToRowsAndColumn(csvText: String, csvColumnDelimiter: String = ',') {
+export function parseCsvToRowsAndColumn(csvText: string, csvColumnDelimiter: string = ',') {
     const rows = csvText.split('\n');
     if (!rows || rows.length === 0) {
       return [];
@@ -8,8 +8,8 @@ export function parseCsvToRowsAndColumn(csvText: String, csvColumnDelimiter: Str
   }
 
 
-function parseRow(row:String, csvColumnDelimiter:String) {
-    let cells = [];
+function parseRow(row:string, csvColumnDelimiter:string) {
+    const cells = [];
     let currentCell = '';
     let quotedMode = false;
   
