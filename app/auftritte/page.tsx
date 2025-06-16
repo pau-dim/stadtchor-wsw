@@ -1,7 +1,6 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -21,14 +20,13 @@ export default function Auftritte() {
 
   return (
     <>
-
-      <h1 id="auftritte" className="text-center">
+      <h1 id="auftritte" className="">
         Unsere Auftritte 2025
       </h1>
+      <div className="subtitle-heading">Den Stadtchor live erleben:</div>
       <div className="container mx-auto">
 
         <Table>
-          <TableCaption>Liste der Auftritte 2025</TableCaption>
           <TableHeader>
             <TableRow>
               {csvAsRows[0].map((cell, i) => (

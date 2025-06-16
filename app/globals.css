@@ -47,7 +47,6 @@
   /* custom */
   --color-custom-red-light: #f1a5a3;
   --color-custom-red-dark: #aa0817;
-  --color-custom-red-dark: #aa0817;
   --color-custom-red-medium: #ec2b3f;
   --color-custom-red-light: #f1a5a3;
   --color-custom-indigo: #cde3fa;
@@ -136,6 +135,9 @@
   .custom-grid {
     @apply flex grid grid-cols-1 md:grid-cols-2 gap-4 mx-2 md:gap-2
   }
+  .subtitle-heading {
+    @apply mb-12 italic text-3xl font-extralight;
+  }
   * {
     @apply border-border outline-ring/50;
   }
@@ -143,9 +145,13 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply text-custom-red-dark text-6xl my-12 font-bold; 
+    @apply text-custom-red-dark text-6xl mt-20 mb-3 font-bold; 
   } 
   h4 {
     @apply text-custom-red-dark text-3xl my-6 mx-auto;
   }
+  div {
+    @apply text-xl
+  }
+
 }

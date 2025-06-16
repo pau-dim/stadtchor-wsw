@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/youtubeplayer/YoutubePlayer.js", "app/impressum/index.page"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/youtubeplayer/YoutubePlayer.js", "app/impressum/page.tsx"],
   "exclude": ["node_modules"]
 }

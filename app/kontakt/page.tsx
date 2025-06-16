@@ -24,8 +24,8 @@ const PersonInfo: React.FC<PersonInfoProps> = ({ imageUrl, name, position, descr
 export default function Kontakt() {
     return (
         <><h1 id="kontakt" className="text-center mb-1">Kontakt</h1>
-            <p className="text-md">Informationen zum Stadtchor Weißwasser e.V.:</p>
-            <h4>Proben immer <strong>montags von 19:00 – 20:30</strong> <br />im <strong>Vereinspavillon Sorauer Platz 2</strong> <br />02943 Weißwasser</h4>
+            <div className="subtitle-heading">Informationen zum Stadtchor Weißwasser e.V.:</div>
+            <h4>Proben immer <strong>montags von 19:00 – 20:30 Uhr</strong> <br />im <strong>Vereinspavillon Sorauer Platz 2</strong> <br />02943 Weißwasser</h4>
 
             <PersonInfo imageUrl="images/anonymus_user.jpg" name="Cornelia Palzer" position="Vorstandsvorsitzende" description="" />
             <PersonInfo imageUrl="images/anonymus_user.jpg" name="Lars Deke" position="Künstlerischer Leiter" description="" />

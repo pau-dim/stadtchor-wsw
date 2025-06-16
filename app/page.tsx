@@ -19,8 +19,8 @@ export default function Home() {
       </div>
 
       <div className="text-center">
-        <h1 className="mx-auto text-center">Stadtchor Weißwasser</h1>
-
+        <h1 id="startseite" className="mx-auto text-center">Stadtchor Weißwasser</h1>
+        <div className="subtitle-heading"></div>
         <div className="align-center mx-auto">
 
           <CustomYoutubePlayer videoId="eGB99WHRguw" />

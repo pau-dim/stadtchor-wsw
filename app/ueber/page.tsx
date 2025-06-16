@@ -6,6 +6,7 @@ const UeberUns = () => {
 
     <>
       <h1 id="ueberuns" className="text-center">Über uns</h1>
+      <div className="subtitle-heading">Danke an alle Unterstützer des Stadtchors</div>
       <div className="custom-grid">
         <Card src="/images/Chorleiter Rainer Wetzorke.jpeg" title="Vereinsgeschichte"
           text="Hier könnt ihr etwas über die Entstehung des Chores und seine Geschichte gemeinsam mit der Stadt Weißwasser erfahren"

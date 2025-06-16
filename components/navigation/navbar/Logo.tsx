@@ -33,7 +33,7 @@ const Logo = () => {
   }, []);
 
   return (
-    <>
+    <div className="drop-shadow-[0_0_30px_white]">
       <Link href="/" style={{ display: showButton ? "none" : "block" }}>
         <Image
           src="/images/Stadtchor-Logo.jpg"
@@ -49,7 +49,7 @@ const Logo = () => {
         }}
       >
       </div>
-    </>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card = ({ src, title, text, link }: CardProps) => {
     return (
-        <div className="group overflow-hidden shadow-md transition-shadow hover:shadow-xl bg-custom-grey-light">
+        <div className="group overflow-hidden shadow-md transition-shadow hover:shadow-xl bg-indigo-50">
             <Link href={link} className="block h-full">
                 <figure className="aspect-video overflow-hidden">
                     <img src={src} alt={title} className="object-cover w-full h-full rounded-t-lg" />
@@ -18,7 +18,7 @@ const Card = ({ src, title, text, link }: CardProps) => {
                 <div className="article-body px-4 py-4 text-left space-y-3">
                     <h2 className="text-xl font-semibold transition-colors duration-300">{title}</h2>
                     <p className="text-gray-700">{text}</p>
-                    <div className="flex items-center text-blue-700 focus:outline-dotted focus:outline-1 focus:outline-[#28666e] hover:underline cursor-pointer pt-2">
+                    <div className="flex items-center text-custom-red-dark focus:outline-dotted focus:outline-1 focus:outline-[#28666e] hover:underline cursor-pointer pt-2">
                         Read more
                         <span className="ml-2 w-6 h-6 opacity-0 -translate-x-2 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 20 20" fill="currentColor">
