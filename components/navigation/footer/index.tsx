@@ -8,13 +8,13 @@ const Footer = () => {
                 {/* Left: Social Media */}
                 <div className="">
                     <div className="flex flex-col justify-between self-stretch h-full">
-                        <Link href="/impressum" className="hover:text-custom-red-dark underline transition-colors mb-6">
+                        <Link href="/impressum" className="hover:text-custom-red-dark underline transition-colors mb-6 md:mb-0">
                             Impressum
                         </Link>
 
                         <div>
                             <span className="font-bold text-custom-red-dark text-xl block">Folge uns</span>
-                            <ul className="flex underline space-x-6 mb-6">
+                            <ul className="flex underline space-x-6">
                                 <li>
                                     <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
                                         className=" hover:text-custom-red-dark transition-colors">

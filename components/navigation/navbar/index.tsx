@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
           }
           {isOpen && (
-            <div className="fixed inset-0 flex flex-col bg-black/90">
+            <div className="fixed inset-0 flex flex-col bg-black/70 font-bold font-border-black">
               <div className="flex justify-end p-4">
                 <Button onClick={toggle}>
                   X

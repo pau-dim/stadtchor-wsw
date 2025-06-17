@@ -17,7 +17,7 @@ const Card = ({ src, title, text, link }: CardProps) => {
                 </figure>
                 <div className="article-body px-4 py-4 text-left space-y-3">
                     <h2 className="text-xl font-semibold transition-colors duration-300">{title}</h2>
-                    <p className="text-gray-700">{text}</p>
+                    <div className="text-gray-700 text-md">{text}</div>
                     <div className="flex items-center text-custom-red-dark focus:outline-dotted focus:outline-1 focus:outline-[#28666e] hover:underline cursor-pointer pt-2">
                         Read more
                         <span className="ml-2 w-6 h-6 opacity-0 -translate-x-2 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">

@@ -17,24 +17,9 @@ const Logo = () => {
     updateWidth();
   }, []);
 
-  // change between the logo and the button when the user scrolls
-  const [showButton, setShowButton] = useState(false);
-
-  const changeNavButton = () => {
-    if (window.scrollY >= 400 && window.innerWidth < 768) {
-      setShowButton(true);
-    } else {
-      setShowButton(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNavButton);
-  }, []);
-
   return (
     <div className="drop-shadow-[0_0_30px_white]">
-      <Link href="/" style={{ display: showButton ? "none" : "block" }}>
+      <Link href="/" className="block">
         <Image
           src="/images/Stadtchor-Logo.jpg"
           alt="Logo"
@@ -43,12 +28,6 @@ const Logo = () => {
           className="relative"
         />
       </Link>
-      <div
-        style={{
-          display: showButton ? "block" : "none",
-        }}
-      >
-      </div>
     </div>
   );
 };
