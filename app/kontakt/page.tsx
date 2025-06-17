@@ -13,7 +13,7 @@ const PersonInfo: React.FC<PersonInfoProps> = ({ imageUrl, name, position, descr
             <img src={imageUrl} alt={name} className="object-cover w-full h-full" />
         </div>
         {/* Right column: Info */}
-        <div className="w-3/5 p-6 flex flex-col justify-center">
+        <div className="w-3/5 p-6 flex flex-col justify-center bg-indigo-50/50">
             <h2 className="text-xl font-bold mb-2">{name}</h2>
             <h3 className="text-md text-gray-600 mb-4">{position}</h3>
             {description && <p className="text-gray-700">{description}</p>}

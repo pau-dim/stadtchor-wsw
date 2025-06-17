@@ -10,14 +10,14 @@ interface CardProps {
 
 const Card = ({ src, title, text, link }: CardProps) => {
     return (
-        <div className="group overflow-hidden shadow-md transition-shadow hover:shadow-xl bg-indigo-50">
+        <div className="group overflow-hidden shadow-md transition-shadow hover:shadow-xl bg-indigo-50/50">
             <Link href={link} className="block h-full">
                 <figure className="aspect-video overflow-hidden">
                     <img src={src} alt={title} className="object-cover w-full h-full rounded-t-lg" />
                 </figure>
-                <div className="article-body px-4 py-4 text-left space-y-3">
+                <div className="article-body px-4 py-4 text-justify space-y-3">
                     <h2 className="text-xl font-semibold transition-colors duration-300">{title}</h2>
-                    <div className="text-gray-700 text-md">{text}</div>
+                    <div className="text-gray-600 text-md">{text}</div>
                     <div className="flex items-center text-custom-red-dark focus:outline-dotted focus:outline-1 focus:outline-[#28666e] hover:underline cursor-pointer pt-2">
                         Read more
                         <span className="ml-2 w-6 h-6 opacity-0 -translate-x-2 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
