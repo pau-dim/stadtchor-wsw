@@ -21,7 +21,7 @@ const Logo = () => {
     <div className="drop-shadow-[0_0_30px_white]">
       <Link href="/" className="block">
         <Image
-          src="/images/Stadtchor-Logo.jpg"
+          src="/images/Stadtchor-Logo.png"
           alt="Logo"
           width={width < 1024 ? "150" : "150"}
           height={width < 1024 ? "45" : "45"}
