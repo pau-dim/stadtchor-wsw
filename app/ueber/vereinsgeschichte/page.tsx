@@ -9,11 +9,11 @@ const Vereinsgeschichte = () => {
             <h1>Vereinsgeschichte</h1>
 
             <h4>Stadtgeschichte Weißwasser O./L.</h4>
-            <div>
+            <div className="text-justify">
                 {stadtGeschichte}
             </div>
             <h4>Eine Dosis für meine Gesundheit</h4>
-            <div>
+            <div className="text-justify">
                 {DosisGesundheit}
             </div>
         </>

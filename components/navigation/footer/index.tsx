@@ -42,7 +42,7 @@ const Footer = () => {
                 <div className="space-y-3 h-full w-fit">
                     <div>
                         <span className="font-bold text-custom-red-dark text-xl block">Telefon:</span>
-                        <span className="font-light block text-lg">03576 123456</span>
+                        <span className="font-light block text-xl">03576 123456</span>
                     </div>
                     <div>
                         <span className="font-bold text-custom-red-dark text-xl block">E-Mail:</span>{" "}
